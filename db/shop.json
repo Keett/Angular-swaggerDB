@@ -1,9 +1,9 @@
 {
 	"products": [
-			{id:1, name:"Laptop", price: 55616, categoryId: 1, description: "Monster Notebook Tulbar",imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"},
-    			{id:2, name:"Kulaklık", price: 500, categoryId: 2, description: "Jabra Elite 25E",imageUrl: "https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg"},
-			{id:3, name:"Tuval", price: 786, categoryId: 3, description: "Yağlı boya tuvali",imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"},
-			{id:4, name:"Basketbol Topu", price: 50, categoryId: 4, description: "Basketbol Topu",imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"}
+			{"id":1, "name": "Laptop", "price": 55616, "categoryId": 1, "description": "Monster Notebook Tulbar","imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"},
+    		{"id":2, "name":"Kulaklık", "price": 500, "categoryId": 2, "description": "Jabra Elite 25E","imageUrl": "https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg"},
+			{"id":3, "name":"Tuval", "price": 786, "categoryId": 3, "description": "Yağlı boya tuvali","imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"},
+			{"id":4, "name":"Basketbol Topu", "price": 50, "categoryId": 4, "description": "Basketbol Topu","imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"}
 		],
 	"categories": [
 			{"id":1, "name": "Elektronik"},
