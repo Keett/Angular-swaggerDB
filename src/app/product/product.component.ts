@@ -1,28 +1,32 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AlertifyService } from '../services/alertify.service';
+import { ProductService } from '../services/product.service';
 import { Product } from './product';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  styleUrls: ['./product.component.css'],
+  providers: [ProductService]
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private alertifyService : AlertifyService) { }
+  constructor(private alertifyService: AlertifyService, private productService: ProductService, private activatedRoute: ActivatedRoute) { }
   title = "Ürün Listesi";
   filterText = "";
+  products!: Product[];
 
-  products: Product[] = [
-    {id:1, name:"Laptop", price: 55616, categoryId: 1, description: "Monster Notebook Tulbar",imageUrl: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"},
-    {id:2, name:"Kulaklık", price: 500, categoryId: 2, description: "Jabra Elite 25E",imageUrl: "https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg"}
-  ]
-
-  ngOnInit(): void {
-    
+  ngOnInit(): void { 
+    //class OnInit interface'ini implement etmiştir. Component ilk yüklendiği zaman, ilk kez açıldığı zaman çalışır.
+    this.activatedRoute.params.subscribe(params => {
+      this.productService.getProducts(params["categoryId"]).subscribe(data => {
+        this.products = data
+      });
+    });
   }
 
-  addToCard(p : Product){
+  addToCard(p: Product) {
     this.alertifyService.success(p.name);
   }
 
