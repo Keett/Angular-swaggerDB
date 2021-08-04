@@ -13,7 +13,7 @@ export class CategoryComponent implements OnInit {
     {id:1, name: "Elektronik"},
     {id:2, name: "Müzik"},
     {id:3, name: "Resim"},
-    {id:4, name: "İletişim"}
+    {id:4, name: "Spor"}
   ]
 
   title= "Kategori Listesi";
