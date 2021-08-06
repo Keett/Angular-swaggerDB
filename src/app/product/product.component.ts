@@ -15,7 +15,7 @@ export class ProductComponent implements OnInit {
   constructor(private alertifyService: AlertifyService, private productService: ProductService, private activatedRoute: ActivatedRoute) { }
   title = "Ürün Listesi";
   filterText = "";
-  products!: Product[];
+  products: Product[] = [];
 
   ngOnInit(): void { 
     //class OnInit interface'ini implement etmiştir. Component ilk yüklendiği zaman, ilk kez açıldığı zaman çalışır.

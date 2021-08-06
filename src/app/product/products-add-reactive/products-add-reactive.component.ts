@@ -8,27 +8,35 @@ import { Product } from '../product';
   styleUrls: ['./products-add-reactive.component.css']
 })
 export class ProductsAddReactiveComponent implements OnInit {
+  
 
-  constructor(private formBuilder: FormBuilder, private productAddForm: FormGroup) { }
+  constructor(private formBuilder: FormBuilder) {
+  }
+  productAddForm!: FormGroup;
+  product: Product = new Product();
 
-  product:Product = new Product();
-
-  createProductAddForm(){
+  createProductAddForm() {
     this.productAddForm = this.formBuilder.group({
       name: ["", Validators.required],
       description: ["", Validators.required],
       imageUrl: ["", Validators.required],
       price: ["", Validators.required],
       categoryId: ["", Validators.required]
-    })
-  }
-  ngOnInit(): void {
+    });
   }
 
-add(){
-  if(this.productAddForm.valid){
-    this.product = Object.assign({}, this.productAddForm.value)
+  get productAddFormControl(){
+    return this.productAddForm.controls;
   }
-}
+  
+  ngOnInit() {
+    this.createProductAddForm();
+  }
+
+  productAdd() {
+    if (this.productAddForm.valid) {
+      this.product = Object.assign({}, this.productAddForm.value)
+    }
+  }
 
 }
