@@ -1,4 +1,5 @@
-<h3 *ngIf="products; else noProducts">{{title}}</h3> <!--title : one way binding örneğidir-->
+<!-- <h3 *ngIf="products; else noProducts">{{title}}</h3> title : one way binding örneğidir -->
+<app-category></app-category>
 <ng-template #noProducts>
     <div class="alert alert-primary" role="alert">
         Ürün listesi boş
@@ -9,7 +10,7 @@
     <small *ngIf="filterText" class="form-text text-muted">Aradığınız ürün: <strong>{{filterText}}</strong></small>
 </div>
 <div class="row">
-    <div *ngFor="let product of products | productFilter : filterText" class="card" style="width: 18rem;">
+    <div *ngFor="let product of products | productFilter : filterText" class="card, productbox" style="width: 18rem;">
         <img src={{product.imageUrl}} class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{product.name}}</h5>

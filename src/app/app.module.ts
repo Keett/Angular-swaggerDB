@@ -10,6 +10,8 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { AlertifyService } from './services/alertify.service';
+import { ProductsAddKlasikComponent } from './product/products-add-klasik/products-add-klasik.component';
+import { ProductsAddReactiveComponent } from './product/products-add-reactive/products-add-reactive.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AlertifyService } from './services/alertify.service';
     NavComponent,
     CategoryComponent,
     ProductComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductsAddKlasikComponent,
+    ProductsAddReactiveComponent
   ],
   imports: [
     BrowserModule,
