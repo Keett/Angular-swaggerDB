@@ -14,6 +14,7 @@ import { ProductsAddKlasikComponent } from './product/products-add-klasik/produc
 import { ProductsAddReactiveComponent } from './product/products-add-reactive/products-add-reactive.component';
 import { LoginComponent } from './login/login.component';
 import { AccountService } from './services/account.service';
+import { LoginGuard } from './login/login.guard';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { AccountService } from './services/account.service';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AlertifyService, AccountService],
+  providers: [AlertifyService, AccountService, LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
