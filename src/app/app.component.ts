@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { threadId } from 'worker_threads';
 import { AccountService } from './services/account.service';
 
 @Component({
