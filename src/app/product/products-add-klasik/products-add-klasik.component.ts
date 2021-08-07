@@ -10,7 +10,7 @@ import { Product } from '../product';
   selector: 'app-products-add-klasik',
   templateUrl: './products-add-klasik.component.html',
   styleUrls: ['./products-add-klasik.component.css'],
-  providers: [CategoryService, ProductService, AlertifyService]
+  providers: [CategoryService, ProductService]
 })
 export class ProductsAddKlasikComponent implements OnInit {
 

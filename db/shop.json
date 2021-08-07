@@ -55,6 +55,38 @@
       "price": "90",
       "categoryId": "2",
       "id": 8
+    },
+    {
+      "categoryId": "1",
+      "price": "900",
+      "imageUrl": "https://productimages.hepsiburada.net/s/34/375/10426214121522.jpg",
+      "description": "Bilgisayar için kablolu mouse",
+      "name": "Mouse",
+      "id": 9
+    },
+    {
+      "name": "Klavye",
+      "description": "Bilgisayar için klavye",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/razer/thumb/v2-88435_large.jpg",
+      "price": "1500",
+      "categoryId": "1",
+      "id": 10
+    },
+    {
+      "name": "Klavye",
+      "description": "Bilgisayar için klavye",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/razer/thumb/v2-88435_large.jpg",
+      "price": "1500",
+      "categoryId": "1",
+      "id": 11
+    },
+    {
+      "name": "Mouse Pad",
+      "description": "mouse altı pad",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCLbT8hI2e5z7AB68jJlk985yuiforu4GagA&usqp=CAU",
+      "price": "804",
+      "categoryId": "1",
+      "id": 12
     }
   ],
   "categories": [

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
 import { ProductComponent } from './product/product.component';
 import { ProductsAddKlasikComponent } from './product/products-add-klasik/products-add-klasik.component';
 import { ProductsAddReactiveComponent } from './product/products-add-reactive/products-add-reactive.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   {path:'products-add-klasik', component:ProductsAddKlasikComponent},
   {path:'products-add-reactive', component:ProductsAddReactiveComponent},
   {path:'', redirectTo: 'products', pathMatch:'full'},
-  {path:'products/category/:categoryId', component:ProductComponent}
+  {path:'products/category/:categoryId', component:ProductComponent},
+  {path:'login', component:LoginComponent}
 ];
 
 @NgModule({
