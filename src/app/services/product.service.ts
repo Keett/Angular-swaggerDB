@@ -4,15 +4,16 @@ import { Product } from '../product/product';
 import { Observable, throwError } from 'rxjs';
 import { tap, catchError } from 'rxjs/operators';
 
-@Injectable()
+@Injectable() // Bu kullanım global bir servis olmadığını gösterir.
 export class ProductService {
 
   constructor(private http:HttpClient) { }
+
   pathProducts = "http://localhost:3000/products";
 
   getProducts(categoryId: number): Observable<Product[]> {
     let path = this.pathProducts;
-    if(categoryId){
+    if(categoryId){     //  categoryId gönderilirse;
       path += "?categoryId=" + categoryId
     }
     return this.http.get<Product[]>(path).pipe(

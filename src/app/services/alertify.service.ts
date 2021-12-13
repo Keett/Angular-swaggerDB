@@ -9,7 +9,7 @@ export class AlertifyService {
 
   constructor() { }
   success(message: string | undefined) {
-    alertify.success(message + " Eklendi");
+    alertify.success(message);
   }
   error(message: string | undefined) {
     alertify.error(message + " Eklenemedi. Bir sorun var.");

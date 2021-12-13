@@ -7,16 +7,16 @@ import { ProductsAddKlasikComponent } from './product/products-add-klasik/produc
 import { ProductsAddReactiveComponent } from './product/products-add-reactive/products-add-reactive.component';
 
 const routes: Routes = [
-  {path:'products', component:ProductComponent},
-  {path:'products-add-klasik', component:ProductsAddKlasikComponent, canActivate:[LoginGuard]},
-  {path:'products-add-reactive', component:ProductsAddReactiveComponent},
-  {path:'', redirectTo: 'products', pathMatch:'full'},
-  {path:'products/category/:categoryId', component:ProductComponent},
-  {path:'login', component:LoginComponent}
+  { path: 'products', component: ProductComponent },
+  { path: 'products-add-klasik', component: ProductsAddKlasikComponent, canActivate: [LoginGuard]},   //canActive guarddan dönen değer true ise path'e gider
+  { path: 'products-add-reactive', component: ProductsAddReactiveComponent },
+  { path: '', redirectTo: 'products', pathMatch: 'full' }, //Anasayfa - index sayfası / pathMatch:full ise kesşnlikle hiçbirşeyin yazılmadığı boş olduğu zaman redirectTo da ki path çalışacak demektir.
+  { path: 'products/category/:categoryId', component: ProductComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

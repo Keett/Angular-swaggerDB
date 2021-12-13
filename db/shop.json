@@ -87,6 +87,14 @@
       "price": "804",
       "categoryId": "1",
       "id": 12
+    },
+    {
+      "name": "Kinect Kamera",
+      "description": "Microsoft XBox One S",
+      "imageUrl": "https://cdn.akakce.com/microsoft/microsoft-xbox-one-kinect-kamera-z.jpg",
+      "price": "500",
+      "categoryId": "1",
+      "id": 13
     }
   ],
   "categories": [
